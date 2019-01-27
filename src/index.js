@@ -1,12 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+//only need to import ReactDOM in top level file as to attach to html file.  Subsequent components will be imported.
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//Function component.  Note capital for name of function.  Must return, this is what will be rendered.
+function MyApp() {
+  return (
+    <div>
+      <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ol>
+      <Second />
+    </div>
+  );
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+function Second() {
+  return <h1>Number 2</h1>;
+}
+
+// ReactDOM.render(component i want to render in JSX, where do i want to render it)
+ReactDOM.render(<MyApp />, document.getElementById("root"));
