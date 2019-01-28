@@ -1,0 +1,45 @@
+Props are properties/attributes of a element that alters the way the component acts.
+
+
+______________________________________________
+
+Pass info to the component within the component tag.
+eg. <Contact />,  now add properties
+    <Contact name="Brad" age="38" phone="123" />
+This info now belongs to that instance of the component, and is saved in an object with the default name of props.
+
+So in component Contact.js
+function Contact (props){
+  return
+      <div>
+        <h2> {props.name} </h2>
+        <h3> Age: {props.age} </h3>
+        <h3> Phone: {props.phone} </h3>
+      </div>
+}
+
+User {} in contact.js because you need to switch to JS within the JSX.
+
+______________________________________________
+
+Can use if/else statements in functions to return different output, ie can have multiple returns, but only one will fire per instance.
+
+eg.
+function Joke(props){
+  if (true){
+    return(
+      THIS
+    )
+  }else{
+    return(
+      THAT
+    )
+  }
+}
+
+OR
+
+return(
+  <h3 style={{display: condition ? "block": "none"}}> {props.name} </h3>
+)
+Here, if the condition is true, it will display the {props.name} as a block element.  If falsey, it will set the CSS of this element as none.

@@ -1,5 +1,0 @@
-npm create-react-app appName
-
-cd appName, git init, npm init
-
-npm install --save react reactDOM

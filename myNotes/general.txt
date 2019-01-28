@@ -1,0 +1,37 @@
+npm create-react-app appName
+
+cd appName, git init, npm init
+
+npm install --save react reactDOM
+
+______________________________________________
+Normal Function Component
+function App () {
+  return (
+    <h1> Hello world </h1>
+  )
+}
+
+Arrow Function Component
+const App = () => <h1>Hello world </h1>
+
+no need for return because return is implied on one line.  Still need return if over multiple lines, so code no shorter in this case.
+
+______________________________________________
+
+Add JS in JSX tag (eg. <h1>) using {}.  The {} indicate what is bewteen these is JS.  Can still use normal template strings too within {}
+
+eg.
+function Hi (){
+  const name = "Brad"
+  const age = 39
+  return (
+    <div>
+      <h1> Good day {name}</h1>
+      <p> {`${name} you are ${age} years of age.`} </p>
+    </div>
+  )
+}
+
+
+______________________________________________

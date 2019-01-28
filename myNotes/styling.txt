@@ -1,0 +1,22 @@
+
+Find normal element tag within a component, add className.  eg. <h1 className="companyTitle">.  Adding an id works like normal CSS.
+
+In index.js make sure you add import "./style.css" to bring in the style sheet or no css will work (only text will change on save).
+
+Then use the style.css file in the root directory to style.
+
+
+______________________________________________
+
+Inline styling
+
+eg. <h1 style = {{color: 'green'}}>Hi</h1>
+
+First curly braces because JSX expects style to be a JS object.
+Second curly braces because we are changing to JS.
+
+Note, properties with dashes should be turned into camelCase. eg. background-color --> backgroundColor.
+
+Can seperate inline style into seperate function.
+const styles = { color: blue, backgroundColor: yellow}
+<h1 style = {styles} > Hi </h1>
