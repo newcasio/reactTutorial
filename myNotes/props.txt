@@ -43,3 +43,16 @@ return(
   <h3 style={{display: condition ? "block": "none"}}> {props.name} </h3>
 )
 Here, if the condition is true, it will display the {props.name} as a block element.  If falsey, it will set the CSS of this element as none.
+
+return(
+  <h1>{this.state.isLoggedIn ? "Logged In" : "Logged Out" }</h1>
+)
+
+
+____________________________________________
+
+Send state via props to child components
+
+<NewComponent playerRating={this.state.playerRating}/>
+
+Can use the props received from parent to setState in child component.

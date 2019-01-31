@@ -1,0 +1,4 @@
+LIFECYCLES
+
+render
+Render called when state or props change.

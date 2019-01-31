@@ -19,7 +19,7 @@ no need for return because return is implied on one line.  Still need return if 
 
 ______________________________________________
 
-Add JS in JSX tag (eg. <h1>) using {}.  The {} indicate what is bewteen these is JS.  Can still use normal template strings too within {}
+Add JS in JSX tag (eg. <h1>) using {}.  The {} indicate what is between these is JS.  Can still use normal template strings too within {}
 
 eg.
 function Hi (){
@@ -35,3 +35,7 @@ function Hi (){
 
 
 ______________________________________________
+
+Event Handlers
+
+eg. <button onClick={()=>{console.log('I was clicked!!')}}>Click Me</button>

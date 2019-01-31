@@ -1,4 +1,4 @@
-const listOfMaps = [
+const dataMaps = [
   {
     id: 1,
     name: "Australian"
@@ -9,4 +9,4 @@ const listOfMaps = [
   }
 ];
 
-export default listOfMaps;
+export default dataMaps;

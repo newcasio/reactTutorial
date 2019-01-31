@@ -2,7 +2,7 @@ import React from "react";
 //only need to import ReactDOM in top level file as to attach to html file.  Subsequent components will be imported.
 import ReactDOM from "react-dom";
 
-//import components
+//import base component
 import MyApp from "./components/pages/MyApp";
 
 import "./style.css";

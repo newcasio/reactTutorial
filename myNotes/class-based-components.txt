@@ -1,0 +1,84 @@
+Example
+
+import React from 'react'
+
+class (componentName) extends React.Component{
+
+  render(props){
+
+    ****Business logic goes here****
+
+    return(
+      <div>
+        <h1>Code goes here</h1>
+        <h1>You now use this.props as opposed to just props {this.props.name}</h1>
+      </div>
+    )
+  }
+}
+
+export default (componentName)
+____________________________________________
+
+Class based components allow state and life-cycle.
+
+
+____________________________________________
+
+Props are immutable.  These cannot be changed.
+____________________________________________
+
+
+State is the data a COMPONENT is storing.  This data can change.  When state is changed, all components using this state will automatically be updated.
+
+The data in state is replaced, not modified.
+
+Must be a state-based component.  Must have a constructor.
+constructor(){
+  super()
+  this.state= {answer: 'yes'}
+}
+
+Access this in JSX using {this.state.answer}.
+
+Pass state to a child component using props.
+eg. <ChildComponent answer={this.state.value} />
+
+
+
+
+Changing state
+
+  this.setState({  age : 34})     change state, forget about prev value
+  OR
+  this.setState((prevState)=>{
+    return {
+      prevState.age + 1
+    }
+  })
+
+
+If you have a class method that needs to change state (use setState), you have to bind the method to the class.  So inside of the constructor
+  this.methodName =  this.methodName.bind(this)
+
+____________________________________________
+
+class newThing extends React.Component{
+
+  constructor(){
+    super();
+      this.state = {
+        name: 'Brad',
+        age: '39'
+      }
+  }
+
+  OTHER METHODS/FUNCTIONS  (must use 'this' to call this method)
+
+  render(){
+    return(
+      JSX
+    )
+  }
+
+}
