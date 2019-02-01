@@ -2,3 +2,40 @@ LIFECYCLES
 
 render
 Render called when state or props change.
+
+__________________________________________
+componentDidMount(){
+  CODE HERE
+}
+
+React will run this method as soon as the component shows up on the screen.  A re-render will not cause this to run again.  Use for API call.
+
+
+__________________________________________
+componentWillRecieveProps(nextProps){
+  if (nextProps.whatever !== this.props.whatever ){
+    //do something
+  }
+}
+
+THIS HAS BEEN DEPRECATED
+Will run on mounting, plus each time a parent component passing down props to this component.  Can use an if statement to check if new props are different to existing props, and do something.
+
+__________________________________________
+shouldComponentUpdate(nextProps, nextState){
+  //condition false will not updated, true will update
+}
+
+React will re-render if something changes.  This can stop re-rendering to increase performance.
+
+__________________________________________
+componentWillUnmount(){
+  //code
+}
+
+Component be removed from screen.  Remove unneccesary clutter from screen.
+
+__________________________________________
+getSnapshotBeforeUpdate(){
+  //create a backup of the current way things are
+}

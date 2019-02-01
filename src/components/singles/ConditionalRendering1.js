@@ -4,15 +4,16 @@ class ConditionalRendering1 extends React.Component {
   constructor() {
     super();
     this.state = {
-      amICool: false
+      amICool: true
     };
   }
 
   render() {
     return (
       <div>
-        <h3>Are down with ternary?</h3>
-        <h3>{this.state.amICool ? "Hell yes" : "Heck no"}</h3>
+        <h2>Conditional Rendering example 1</h2>
+        <h4>Are down with ternary?</h4>
+        <h4>{this.state.amICool ? "Hell yes" : "Heck no"}</h4>
       </div>
     );
   }
