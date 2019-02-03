@@ -16,6 +16,7 @@ import JsonToState from "../singles/JsonToState";
 import ChangingState from "../singles/ChangingState";
 import ChangingStatePractise from "../singles/ChangingStatePractise";
 import ConditionalRendering2 from "../singles/ConditionalRendering2";
+import Toggle from "../singles/Toggle";
 
 //Function component.  Note capital for name of function.  Each component must return, this is what will be rendered.
 function MyApp() {
@@ -51,6 +52,7 @@ function MyApp() {
       </div>
       <ChangingState />
       <ChangingStatePractise />
+      <Toggle />
       <Footer />
     </div>
   );
