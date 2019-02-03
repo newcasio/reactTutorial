@@ -34,3 +34,5 @@ class Toggle extends React.Component {
 export default Toggle;
 
 //clickHandler method setting state of loggedIn to whatever the previous loggedIn state is NOT.
+
+//if you don't care what the previous value in state, don't need to use the return{}, just directly change the value, this.setState({value:newValue}).

@@ -8,8 +8,13 @@ componentDidMount(){
   CODE HERE
 }
 
+
+Class method.
 React will run this method as soon as the component shows up on the screen.  A re-render will not cause this to run again.  Use for API call.
 
+Fetch - built in JS function to using HTTP to retrieve data.  Returns a promise, so use .then
+
+Star Wars API https://swapi.co
 
 __________________________________________
 componentWillRecieveProps(nextProps){
