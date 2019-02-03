@@ -71,6 +71,8 @@ class newThing extends React.Component{
         name: 'Brad',
         age: '39'
       }
+      BIND ANY EVENT HANDLERS HERE
+      eg. this.clickHandler = this.clickHandler.bind(this)
   }
 
   OTHER METHODS/FUNCTIONS  (must use 'this' to call this method)

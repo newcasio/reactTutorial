@@ -18,6 +18,8 @@ import ChangingStatePractise from "../singles/ChangingStatePractise";
 import ConditionalRendering2 from "../singles/ConditionalRendering2";
 import Toggle from "../singles/Toggle";
 import Fetch from "../singles/Fetch";
+import BasicForm from "../singles/BasicForm";
+import OtherForms from "../singles/OtherForms";
 
 //Function component.  Note capital for name of function.  Each component must return, this is what will be rendered.
 function MyApp() {
@@ -55,6 +57,8 @@ function MyApp() {
       <ChangingStatePractise />
       <Toggle />
       <Fetch />
+      <BasicForm />
+      <OtherForms />
       <Footer />
     </div>
   );
